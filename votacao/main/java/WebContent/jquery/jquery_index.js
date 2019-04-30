@@ -1,0 +1,24 @@
+$(function(){
+	$('#btVotar').click(function(){
+		$("#form").attr("action","./eleitoresJSP/votar.jsp")
+		$('#containerForm').toggleClass('tamanhoContainerLogin');
+		$('#containerBotoes').hide();
+		$('#containerForm').slideDown(500);
+	});
+	$('#btAreaMesario').click(function(){
+		$("#form").attr("action","./funcionariosJSP/painel-funcionarios.jsp");
+		$('#containerForm').toggleClass('tamanhoContainerLogin');
+		$('#containerBotoes').hide();
+		$('#containerForm').slideDown(500);
+	});
+	$('#btAreaSupervisor').click(function(){
+		$("#form").attr("action","./funcionariosJSP/painel-funcionarios.jsp");
+		$('#containerForm').toggleClass('tamanhoContainerLogin');
+		$('#containerBotoes').hide();
+		$('#containerForm').slideDown(500);
+	});
+	$('#btVoltar').click(function(){
+		$('#containerForm').hide();
+		$('#containerBotoes').slideDown(500);
+	});
+});
